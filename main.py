@@ -155,7 +155,7 @@ if os.path.exists('./error.log'):
 
 path = os.path.expandvars(r'%LOCALAPPDATA%') + '\DeadByDaylight\Saved\Logs\DeadByDaylight.log'
 if not os.path.exists(path):
-    print('Log file not found!')
+    print('Game log file not found!')
     input()
     sys.exit()
 else:
