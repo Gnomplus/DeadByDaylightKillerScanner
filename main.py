@@ -156,6 +156,7 @@ if os.path.exists('./error.log'):
 path = os.path.expandvars(r'%LOCALAPPDATA%') + '\DeadByDaylight\Saved\Logs\DeadByDaylight.log'
 if not os.path.exists(path):
     print('Log file not found!')
+    input()
     sys.exit()
 else:
     # Clear old log if game not started yet
@@ -237,3 +238,4 @@ except Exception as e:
         for line in traceback.format_exception(exc_type, exc_value, exc_traceback):
             error_log.write(line)
         error_log.write('Process terminated.')
+    input()
